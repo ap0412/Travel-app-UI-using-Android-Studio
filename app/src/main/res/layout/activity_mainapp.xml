@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainapp"
+    android:background="@color/white">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+      >
+
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="15dp"
+           android:layout_marginStart="15dp">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Explore"
+           android:textStyle="bold"
+           android:fontFamily="@font/montserrat"
+           android:textColor="@color/black"
+           android:textSize="25sp"
+           />
+           <TextView
+               android:id="@+id/textcountry"
+               android:layout_marginStart="8dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:fontFamily="@font/montserrat"
+               android:textColor="#3594E2"
+               android:text="Europe"
+               android:textSize="25sp"
+               />
+           <ImageButton
+               android:id="@+id/countries"
+               android:layout_marginStart="2dp"
+               android:layout_marginTop="8dp"
+               android:layout_width="28dp"
+               android:layout_height="28dp"
+               android:background="@drawable/arrow_down"
+               android:backgroundTint="@color/sys_color"
+               />
+       </LinearLayout>
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/europe"
+           android:orientation="vertical"
+           android:visibility="visible">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+<TextView
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="YOUR TRIPS"
+    android:layout_marginStart="15dp"
+    android:fontFamily="@font/montserrat"
+    android:textSize="14dp"
+    android:textColor="@color/black" />
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="140dp"
+                   android:layout_margin="20dp"
+                   android:layout_gravity="center"
+                   android:backgroundTint="@color/white"
+                   app:cardCornerRadius="9dp"
+                   android:layout_marginTop="6dp"
+
+
+                   >
+       <ImageView
+           android:layout_gravity="center"
+           android:layout_width="match_parent"
+
+           android:layout_height="140dp"
+           android:background="@drawable/mountainback"
+           />
+               <Button
+                   android:layout_width="65dp"
+                   android:layout_height="40dp"
+                   android:background="#dbe9f4"
+                   android:text="Edit"
+                   android:textAllCaps="false"
+                   android:textColor="@color/black"
+                   android:fontFamily="@font/montserrat"
+                   android:textSize="15dp"
+                   android:layout_marginStart="110dp"
+                   android:layout_gravity="center"
+
+                   />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/montserrat"
+                       android:layout_marginTop="35dp"
+                       android:layout_marginStart="17dp"
+                       android:text="Europe 2021"
+                       android:textColor="@color/white"
+                       android:textSize="21dp" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/montserrat"
+                       android:layout_marginTop="73dp"
+                       android:layout_marginStart="17dp"
+                       android:text="13 locations. 1922kms"
+                       android:textColor="#707070"
+                       android:textSize="15dp" />
+
+
+               </androidx.cardview.widget.CardView>
+       <TextView
+           android:layout_marginTop="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="MUST SEE"
+           android:layout_marginStart="15dp"
+           android:fontFamily="@font/montserrat"
+           android:textSize="14dp"
+           android:textColor="@color/black" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="260dp"
+            android:layout_height="205dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+
+            android:layout_marginStart="18dp"
+            app:cardCornerRadius="5dp"
+            android:elevation="5dp"
+            android:outlineAmbientShadowColor="#707070"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="123dp"
+                android:background="@drawable/norway"
+                android:layout_margin="5dp"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Tromo, Norway"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+
+                />
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="31 Hotels, 133 restaurants"
+                    android:textColor="#707070"
+                    android:textSize="13dp"
+
+                    />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#3594E2"
+                android:src="@drawable/ic_baseline_add_24"
+                android:scaleType="centerInside"
+                android:layout_marginTop="145dp"
+                android:layout_marginStart="205dp"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view2"
+            android:layout_width="260dp"
+            android:layout_height="205dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="8dp"
+            android:elevation="5dp"
+            android:outlineAmbientShadowColor="@color/black"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp"
+                    android:background="@drawable/norway"
+                    android:layout_margin="5dp"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Tromo, Norway"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+
+                    />
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="31 Hotels, 133 restaurants"
+                    android:textColor="#707070"
+                    android:textSize="13dp"
+
+                    />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#3594E2"
+                android:src="@drawable/ic_baseline_add_24"
+                android:scaleType="centerInside"
+                android:layout_marginTop="140dp"
+                android:layout_marginStart="205dp"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view3"
+            android:layout_width="260dp"
+            android:layout_height="205dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="5dp"
+            android:elevation="5dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:layout_marginEnd="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp"
+                    android:background="@drawable/norway"
+                    android:layout_margin="5dp"
+                    />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Tromo, Norway"
+                    android:textColor="@color/black"
+                    android:textSize="19dp"
+
+                    />
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="31 Hotels, 133 restaurants"
+                    android:textColor="#707070"
+                    android:textSize="14dp"
+
+                    />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#3594E2"
+                android:src="@drawable/ic_baseline_add_24"
+                android:scaleType="centerInside"
+                android:layout_marginTop="140dp"
+                android:layout_marginStart="205dp"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout></HorizontalScrollView>
+
+       <TextView
+           android:layout_marginTop="15dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="PRE-MADE PLANS"
+           android:layout_marginStart="15dp"
+           android:fontFamily="@font/montserrat"
+           android:textSize="14dp"
+           android:textColor="@color/black" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:gravity="center">
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/card_view5"
+           android:layout_width="330dp"
+           android:layout_height="200dp"
+           android:backgroundTint="@color/white"
+           android:layout_marginStart="18dp"
+           app:cardCornerRadius="10dp"
+           android:elevation="5dp"
+           android:outlineAmbientShadowColor="@color/black"
+
+           >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal">
+           <ImageView
+               android:layout_width="110dp"
+               android:layout_height="match_parent"
+               android:background="@drawable/hawaii"
+               android:layout_margin="7dp"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/montserrat"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginStart="7dp"
+                   android:text="Hawaii in Summer"
+                   android:textColor="@color/black"
+                   android:textSize="19dp" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/montserrat"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginStart="6dp"
+                       android:text="Check out these beautiful spots in Hawaii at their best during in this Summer!"
+                       android:textColor="#707070"
+                       android:textSize="15dp" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/montserrat"
+                       android:layout_marginTop="10dp"
+                       android:text="Rs 20000"
+                       android:textStyle="bold"
+                       android:layout_marginStart="10dp"
+                       android:textColor="#3594E2"
+                       android:textSize="16dp" />
+
+               </LinearLayout>
+           </LinearLayout>
+       </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view52"
+            android:layout_width="330dp"
+            android:layout_height="200dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="18dp"
+            app:cardCornerRadius="10dp"
+            android:elevation="5dp"
+            android:outlineAmbientShadowColor="@color/black"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dubai"
+                    android:layout_margin="7dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="7dp"
+                        android:text="Dubai Nightlife"
+                        android:textColor="@color/black"
+                        android:textSize="19dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="6dp"
+                        android:text="Check out these beautiful spots in Dubai at their best during in this festivals!"
+                        android:textColor="#707070"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginTop="10dp"
+                        android:text="Rs 40000"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:textColor="#3594E2"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view51"
+            android:layout_width="330dp"
+            android:layout_height="200dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="18dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="5dp"
+            android:outlineAmbientShadowColor="@color/black"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/amazon"
+                    android:layout_margin="7dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="7dp"
+                        android:text="Peace in Amazon"
+                        android:textColor="@color/black"
+                        android:textSize="19dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="6dp"
+                        android:text="Check out these beautiful spots in Amazon at their best during in this Autumn!"
+                        android:textColor="#707070"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginTop="10dp"
+                        android:text="Rs 20000"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:textColor="#3594E2"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout></HorizontalScrollView>
+
+       <TextView
+           android:id="@+id/card_view0"
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="65dp"
+           android:backgroundTint="@color/white"
+           android:layout_marginStart="5dp"
+           >
+
+
+       </TextView></LinearLayout>
+</ScrollView>
+           </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/asia"
+           android:orientation="vertical"
+           android:visibility="gone">
+
+           <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_marginTop="20dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="YOUR TRIPS"
+                       android:layout_marginStart="15dp"
+                       android:fontFamily="@font/montserrat"
+                       android:textSize="14dp"
+                       android:textColor="@color/black" />
+                   <androidx.cardview.widget.CardView
+                       android:layout_width="match_parent"
+                       android:layout_height="140dp"
+                       android:layout_margin="20dp"
+                       android:layout_gravity="center"
+                       android:backgroundTint="@color/white"
+                       app:cardCornerRadius="9dp"
+                       android:layout_marginTop="6dp"
+
+
+                       >
+                       <ImageView
+                           android:layout_gravity="center"
+                           android:layout_width="match_parent"
+
+                           android:layout_height="140dp"
+                           android:background="@drawable/mountainback"
+                           />
+                       <Button
+                           android:layout_width="65dp"
+                           android:layout_height="40dp"
+                           android:background="#dbe9f4"
+                           android:text="Edit"
+                           android:textAllCaps="false"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/montserrat"
+                           android:textSize="15dp"
+                           android:layout_marginStart="110dp"
+                           android:layout_gravity="center"
+
+                           />
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/montserrat"
+                           android:layout_marginTop="35dp"
+                           android:layout_marginStart="17dp"
+                           android:text="Asia 2021"
+                           android:textColor="@color/white"
+                           android:textSize="21dp" />
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/montserrat"
+                           android:layout_marginTop="73dp"
+                           android:layout_marginStart="17dp"
+                           android:text="11 locations. 1832kms"
+                           android:textColor="#707070"
+                           android:textSize="15dp" />
+
+
+                   </androidx.cardview.widget.CardView>
+                   <TextView
+                       android:layout_marginTop="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="MUST SEE"
+                       android:layout_marginStart="15dp"
+                       android:fontFamily="@font/montserrat"
+                       android:textSize="14dp"
+                       android:textColor="@color/black" />
+
+                   <HorizontalScrollView
+                       android:layout_width="match_parent"
+                       android:layout_height="230dp"
+                       >
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="horizontal"
+                           android:layout_gravity="start"
+                           android:gravity="center">
+
+                           <androidx.cardview.widget.CardView
+
+                               android:layout_width="260dp"
+                               android:layout_height="205dp"
+                               android:layout_gravity="center"
+                               android:backgroundTint="@color/white"
+
+                               android:layout_marginStart="18dp"
+                               app:cardCornerRadius="5dp"
+                               android:elevation="5dp"
+                               android:outlineAmbientShadowColor="#707070"
+
+                               >
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:orientation="vertical">
+                                   <ImageView
+                                       android:layout_width="match_parent"
+                                       android:layout_height="123dp"
+                                       android:background="@drawable/norway"
+                                       android:layout_margin="5dp"
+                                       />
+                                   <TextView
+                                       android:layout_marginTop="5dp"
+                                       android:layout_marginStart="10dp"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:fontFamily="@font/montserrat"
+                                       android:text="Tokyo, Japan"
+                                       android:textColor="@color/black"
+                                       android:textSize="18dp"
+
+                                       />
+
+                                   <TextView
+                                       android:layout_marginTop="3dp"
+                                       android:layout_marginStart="10dp"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:fontFamily="@font/montserrat"
+                                       android:text="31 Hotels, 133 restaurants"
+                                       android:textColor="#707070"
+                                       android:textSize="13sp"
+
+                                       />
+
+                               </LinearLayout>
+
+                               <ImageButton
+                                   android:layout_width="40dp"
+                                   android:layout_height="40dp"
+                                   android:background="#3594E2"
+                                   android:src="@drawable/ic_baseline_add_24"
+                                   android:scaleType="centerInside"
+                                   android:layout_marginTop="145dp"
+                                   android:layout_marginStart="205dp"
+
+                                   />
+
+                           </androidx.cardview.widget.CardView>
+                           <androidx.cardview.widget.CardView
+
+                               android:layout_width="260dp"
+                               android:layout_height="205dp"
+                               android:layout_gravity="center"
+                               android:backgroundTint="@color/white"
+                               android:layout_marginStart="20dp"
+                               app:cardCornerRadius="8dp"
+                               android:elevation="5dp"
+                               android:outlineAmbientShadowColor="@color/black"
+
+                               >
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:orientation="vertical">
+                                   <ImageView
+                                       android:layout_width="match_parent"
+                                       android:layout_height="123dp"
+                                       android:background="@drawable/norway"
+                                       android:layout_margin="5dp"
+                                       />
+                                   <TextView
+                                       android:layout_marginTop="5dp"
+                                       android:layout_marginStart="10dp"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:fontFamily="@font/montserrat"
+                                       android:text="Manali, India"
+                                       android:textColor="@color/black"
+                                       android:textSize="18dp"
+
+                                       />
+
+                                   <TextView
+                                       android:layout_marginTop="3dp"
+                                       android:layout_marginStart="10dp"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:fontFamily="@font/montserrat"
+                                       android:text="31 Hotels, 133 restaurants"
+                                       android:textColor="#707070"
+                                       android:textSize="13sp"
+
+                                       />
+
+                               </LinearLayout>
+
+                               <ImageButton
+                                   android:layout_width="40dp"
+                                   android:layout_height="40dp"
+                                   android:background="#3594E2"
+                                   android:src="@drawable/ic_baseline_add_24"
+                                   android:scaleType="centerInside"
+                                   android:layout_marginTop="140dp"
+                                   android:layout_marginStart="205dp"
+
+                                   />
+
+                           </androidx.cardview.widget.CardView>
+                           <androidx.cardview.widget.CardView
+                               android:layout_width="260dp"
+                               android:layout_height="205dp"
+                               android:layout_gravity="center"
+                               android:backgroundTint="@color/white"
+                               android:layout_marginStart="20dp"
+                               app:cardCornerRadius="5dp"
+                               android:elevation="5dp"
+                               android:outlineAmbientShadowColor="@color/black"
+                               android:layout_marginEnd="8dp"
+                               >
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:orientation="vertical">
+                                   <ImageView
+                                       android:layout_width="match_parent"
+                                       android:layout_height="123dp"
+                                       android:background="@drawable/norway"
+                                       android:layout_margin="5dp"
+                                       />
+                                   <TextView
+                                       android:layout_marginTop="10dp"
+                                       android:layout_marginStart="5dp"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:fontFamily="@font/montserrat"
+                                       android:text="Tromo, Norway"
+                                       android:textColor="@color/black"
+                                       android:textSize="19sp"
+
+                                       />
+
+                                   <TextView
+                                       android:layout_marginTop="3dp"
+                                       android:layout_marginStart="5dp"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:fontFamily="@font/montserrat"
+                                       android:text="31 Hotels, 133 restaurants"
+                                       android:textColor="#707070"
+                                       android:textSize="14sp"
+
+                                       />
+
+                               </LinearLayout>
+
+                               <ImageButton
+                                   android:layout_width="40dp"
+                                   android:layout_height="40dp"
+                                   android:background="#3594E2"
+                                   android:src="@drawable/ic_baseline_add_24"
+                                   android:scaleType="centerInside"
+                                   android:layout_marginTop="140dp"
+                                   android:layout_marginStart="205dp"
+
+                                   />
+
+                           </androidx.cardview.widget.CardView>
+                       </LinearLayout></HorizontalScrollView>
+
+                   <TextView
+                       android:layout_marginTop="15dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="PRE-MADE PLANS"
+                       android:layout_marginStart="15dp"
+                       android:fontFamily="@font/montserrat"
+                       android:textSize="14dp"
+                       android:textColor="@color/black" />
+
+                   <HorizontalScrollView
+                       android:layout_width="match_parent"
+                       android:layout_height="230dp"
+                       >
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="horizontal"
+                           android:layout_gravity="start"
+                           android:gravity="center">
+
+                           <androidx.cardview.widget.CardView
+
+                               android:layout_width="330dp"
+                               android:layout_height="200dp"
+                               android:backgroundTint="@color/white"
+                               android:layout_marginStart="18dp"
+                               app:cardCornerRadius="10dp"
+                               android:elevation="5dp"
+                               android:outlineAmbientShadowColor="@color/black"
+
+                               >
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:orientation="horizontal">
+                                   <ImageView
+                                       android:layout_width="110dp"
+                                       android:layout_height="match_parent"
+                                       android:background="@drawable/hawaii"
+                                       android:layout_margin="7dp"/>
+                                   <LinearLayout
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:orientation="vertical">
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/montserrat"
+                                           android:layout_marginTop="15dp"
+                                           android:layout_marginStart="7dp"
+                                           android:text="Hawaii in Summer"
+                                           android:textColor="@color/black"
+                                           android:textSize="19dp" />
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/montserrat"
+                                           android:layout_marginTop="10dp"
+                                           android:layout_marginStart="6dp"
+                                           android:text="Check out these beautiful spots in Hawaii at their best during in this Summer!"
+                                           android:textColor="#707070"
+                                           android:textSize="15dp" />
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/montserrat"
+                                           android:layout_marginTop="10dp"
+                                           android:text="Rs 20000"
+                                           android:textStyle="bold"
+                                           android:layout_marginStart="10dp"
+                                           android:textColor="#3594E2"
+                                           android:textSize="16dp" />
+
+                                   </LinearLayout>
+                               </LinearLayout>
+                           </androidx.cardview.widget.CardView>
+                           <androidx.cardview.widget.CardView
+
+                               android:layout_width="330dp"
+                               android:layout_height="200dp"
+                               android:backgroundTint="@color/white"
+                               android:layout_marginStart="18dp"
+                               app:cardCornerRadius="10dp"
+                               android:elevation="5dp"
+                               android:outlineAmbientShadowColor="@color/black"
+
+                               >
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:orientation="horizontal">
+                                   <ImageView
+                                       android:layout_width="110dp"
+                                       android:layout_height="match_parent"
+                                       android:background="@drawable/asianlong2"
+                                       android:layout_margin="7dp"/>
+                                   <LinearLayout
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:orientation="vertical">
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/montserrat"
+                                           android:layout_marginTop="15dp"
+                                           android:layout_marginStart="7dp"
+                                           android:text="Dubai Nightlife"
+                                           android:textColor="@color/black"
+                                           android:textSize="19dp" />
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/montserrat"
+                                           android:layout_marginTop="10dp"
+                                           android:layout_marginStart="6dp"
+                                           android:text="Check out these beautiful spots in Dubai at their best during in this festivals!"
+                                           android:textColor="#707070"
+                                           android:textSize="15dp" />
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/montserrat"
+                                           android:layout_marginTop="10dp"
+                                           android:text="Rs 40000"
+                                           android:textStyle="bold"
+                                           android:layout_marginStart="10dp"
+                                           android:textColor="#3594E2"
+                                           android:textSize="16dp" />
+
+                                   </LinearLayout>
+                               </LinearLayout>
+                           </androidx.cardview.widget.CardView>
+                           <androidx.cardview.widget.CardView
+                               android:layout_width="330dp"
+                               android:layout_height="200dp"
+                               android:backgroundTint="@color/white"
+                               android:layout_marginStart="18dp"
+                               app:cardCornerRadius="10dp"
+                               android:layout_marginEnd="10dp"
+                               android:elevation="5dp"
+                               android:outlineAmbientShadowColor="@color/black"
+
+                               >
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:orientation="horizontal">
+                                   <ImageView
+                                       android:layout_width="110dp"
+                                       android:layout_height="match_parent"
+                                       android:background="@drawable/amazon"
+                                       android:layout_margin="7dp"/>
+                                   <LinearLayout
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:orientation="vertical">
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/montserrat"
+                                           android:layout_marginTop="15dp"
+                                           android:layout_marginStart="7dp"
+                                           android:text="Peace in Amazon"
+                                           android:textColor="@color/black"
+                                           android:textSize="19dp" />
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/montserrat"
+                                           android:layout_marginTop="10dp"
+                                           android:layout_marginStart="6dp"
+                                           android:text="Check out these beautiful spots in Amazon at their best during in this Autumn!"
+                                           android:textColor="#707070"
+                                           android:textSize="15dp" />
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/montserrat"
+                                           android:layout_marginTop="10dp"
+                                           android:text="Rs 20000"
+                                           android:textStyle="bold"
+                                           android:layout_marginStart="10dp"
+                                           android:textColor="#3594E2"
+                                           android:textSize="16dp" />
+
+                                   </LinearLayout>
+                               </LinearLayout>
+                           </androidx.cardview.widget.CardView>
+
+
+                       </LinearLayout></HorizontalScrollView>
+
+                   <TextView
+
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="65dp"
+                       android:backgroundTint="@color/white"
+                       android:layout_marginStart="5dp"
+                       >
+
+
+                   </TextView></LinearLayout>
+           </ScrollView>
+       </LinearLayout>
+
+
+
+
+
+
+
+
+   </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        android:background="@color/white"
+
+        app:itemBackground="@color/white"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/sys_color"
+        app:menu="@menu/menu_bottom"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".login">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/loginmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Welcome Back!"
+            android:textAlignment="center"
+            android:textColor="#546E7A"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <soup.neumorphism.NeumorphImageButton
+                style="@style/Widget.Design.FloatingActionButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:gravity="start"
+                android:scaleType="centerCrop"
+                android:src="@drawable/facebook"
+                app:neumorph_shadowColorDark="@color/light_shadow"
+                app:neumorph_shadowElevation="1dp" />
+
+            <soup.neumorphism.NeumorphImageButton
+                style="@style/Widget.Design.FloatingActionButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:gravity="start"
+                android:scaleType="centerCrop"
+                android:src="@drawable/twitter"
+                app:neumorph_shadowColorDark="@color/light_shadow"
+                app:neumorph_shadowElevation="1dp" />
+
+            <soup.neumorphism.NeumorphImageButton
+                style="@style/Widget.Design.FloatingActionButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:gravity="start"
+                android:scaleType="centerCrop"
+                android:src="@drawable/google"
+                app:neumorph_shadowColorDark="@color/light_shadow"
+                app:neumorph_shadowElevation="1dp" />
+
+
+        </LinearLayout>
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            app:neumorph_backgroundColor="@color/cardview_color"
+            app:neumorph_shadowColorDark="@color/light_shadow"
+            app:neumorph_shadowElevation="3dp"
+            app:neumorph_shapeType="pressed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <soup.neumorphism.NeumorphImageButton
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_round_person_24"
+                    app:neumorph_backgroundColor="#16056B"
+                    app:neumorph_shadowElevation="3dp" />
+
+                <EditText
+                    android:id="@+id/loginemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="15dp"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:fontFamily="@font/ibm"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textColorHint="#707070"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            app:neumorph_backgroundColor="@color/cardview_color"
+            app:neumorph_shadowColorDark="@color/light_shadow"
+            app:neumorph_shadowElevation="3dp"
+            app:neumorph_shapeType="pressed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <soup.neumorphism.NeumorphImageButton
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_round_lock_24"
+                    app:neumorph_backgroundColor="#16056B"
+                    app:neumorph_shadowElevation="3dp" />
+
+                <EditText
+                    android:id="@+id/loginpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="15dp"
+                    android:background="@null"
+                    android:fontFamily="@font/ibm"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textColorHint="#707070"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/loginbtn"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            app:neumorph_backgroundColor="#16056B"
+           android:fontFamily="@font/ibm"
+          app:neumorph_shadowColorDark="@color/light_shadow"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:fontFamily="@font/ibm"
+            android:gravity="center"
+            android:text="New Member? Create an Account"
+            android:textAlignment="center"
+            android:textColor="#707070"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:fontFamily="@font/ibm"
+            android:gravity="center"
+            android:text="Forget Pasword?"
+            android:textAlignment="center"
+            android:textColor="#707070"
+            android:textSize="12sp" />
+
+
+    </LinearLayout></ScrollView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/signmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Hello User!"
+            android:textAlignment="center"
+            android:textColor="#546E7A"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <soup.neumorphism.NeumorphImageButton
+                style="@style/Widget.Design.FloatingActionButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:gravity="start"
+                android:scaleType="centerCrop"
+                android:src="@drawable/facebook"
+                app:neumorph_shadowColorDark="@color/light_shadow"
+                app:neumorph_shadowElevation="1dp" />
+
+            <soup.neumorphism.NeumorphImageButton
+                style="@style/Widget.Design.FloatingActionButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:gravity="start"
+                android:scaleType="centerCrop"
+                android:src="@drawable/twitter"
+                app:neumorph_shadowColorDark="@color/light_shadow"
+                app:neumorph_shadowElevation="1dp" />
+
+            <soup.neumorphism.NeumorphImageButton
+                style="@style/Widget.Design.FloatingActionButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:gravity="start"
+                android:scaleType="centerCrop"
+                android:src="@drawable/google"
+                app:neumorph_shadowColorDark="@color/light_shadow"
+                app:neumorph_shadowElevation="1dp" />
+
+
+        </LinearLayout>
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            app:neumorph_backgroundColor="@color/cardview_color"
+            app:neumorph_shadowColorDark="@color/light_shadow"
+            app:neumorph_shadowElevation="3dp"
+            app:neumorph_shapeType="pressed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <soup.neumorphism.NeumorphImageButton
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_round_person_24"
+                    app:neumorph_backgroundColor="#16056B"
+                    app:neumorph_shadowElevation="3dp" />
+
+                <EditText
+                    android:id="@+id/signemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="15dp"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:fontFamily="@font/ibm"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textColorHint="#707070"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            app:neumorph_backgroundColor="@color/cardview_color"
+            app:neumorph_shadowColorDark="@color/light_shadow"
+            app:neumorph_shadowElevation="3dp"
+            app:neumorph_shapeType="pressed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <soup.neumorphism.NeumorphImageButton
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_round_lock_24"
+                    app:neumorph_backgroundColor="#16056B"
+                    app:neumorph_shadowElevation="3dp" />
+
+                <EditText
+                    android:id="@+id/Password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="15dp"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:fontFamily="@font/ibm"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textColorHint="#707070"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            app:neumorph_backgroundColor="@color/cardview_color"
+            app:neumorph_shadowColorDark="@color/light_shadow"
+            app:neumorph_shadowElevation="3dp"
+            app:neumorph_shapeType="pressed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <soup.neumorphism.NeumorphImageButton
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_round_lock_24"
+                    app:neumorph_backgroundColor="#16056B"
+                    app:neumorph_shadowElevation="3dp" />
+
+                <EditText
+                    android:id="@+id/conPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="15dp"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:fontFamily="@font/ibm"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textColorHint="#707070"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphButton
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            app:neumorph_backgroundColor="#16056B"
+            android:fontFamily="@font/ibm"
+            app:neumorph_shadowColorDark="@color/light_shadow"
+            android:text="Register"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:fontFamily="@font/ibm"
+            android:gravity="center"
+            android:text="Already a member?"
+            android:textAlignment="center"
+            android:textColor="#707070"
+            android:textSize="12sp" />
+
+
+    </LinearLayout></ScrollView>
+
+</RelativeLayout>
